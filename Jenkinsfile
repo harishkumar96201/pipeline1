@@ -1,9 +1,9 @@
 pipeline {
-	agent { label 'Master' } 
+	agent { label 'master' } 
 	stages {
 		stage('Both build and test') {
 			parallel {
-				stage('build') { 
+				stage('Build') { 
 					steps {
 						sh 'sleep 15; echo "This is a Build stage"'
 					}

@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Both build and test') {
 			parallel {
-				stage('Build') { 
+				stage('build') { 
 					steps {
 						sh 'sleep 15; echo "This is a Build stage"'
 					}

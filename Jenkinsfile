@@ -1,5 +1,5 @@
 pipeline {
-	agent { label 'Master' } 
+	agent any
 	stages {
 		stage('Both build and test') {
 			parallel {
